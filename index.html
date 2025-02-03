@@ -8,6 +8,18 @@
     </style>
     <head>
         <meta charset="UTF-8">
+        <meta property="og:title" content="My Awesome Blog Post Title">
+        <meta property="og:description" content="A captivating summary of the blog post content.">
+        <meta property="og:image" content="/X.avif">
+        <meta property="og:url" content="https://yourwebsite.com/blog-post">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@YourTwitterHandle">
+        <meta name="twitter:creator" content="@ZiyueLiu">
+        <meta name="twitter:title" content="Ziyue Liu's Portfolio - UCSD Computer Engineering Student">
+        <meta name="twitter:description" content="Portfolio showcasing software engineering projects including Ray Tracer, Codename game, and BERT-based Intent Classification research. Expertise in Python, Java, and full-stack development.">
+        <meta name="twitter:image" content="https://yourwebsite.com/profile-image.jpg">
+        <meta name="twitter:image:alt" content="Ziyue Liu's Portfolio Screenshot">
         <link rel="stylesheet" href="styles.css">
         <title>Ziyue Liu's Personal Site</title>
     </head>
@@ -31,6 +43,20 @@
                     Welcome message
                 </h2>
 
+                <blockquote>
+                    <p><math>
+                        <mi>E</mi>
+                        <mo>=</mo>
+                        <mi>m</mi>
+                        <mi>c</mi>
+                        <msup>
+                            <mn>2</mn>
+                        </msup>
+                    </math></p>
+                    <cite>-- Albert Einstein</cite>                </blockquote>
+                <blockquote>
+                    <cite>People work better when they know what the goal is and why.</cite>-- Elon Musk
+                </blockquote>
                 <canvas id="welcomeCanvas" width="120" height="120">
                     An interactive particle animation welcoming visitors to the site.
                 </canvas>
@@ -299,18 +325,20 @@ Feel free to browse through my projects, technical skills, and professional jour
                                 <option value="Python">
                             </datalist>
                         <br>
-                        <fieldset>
-                            <legend>Choose your favorite project</legend>
-                        
-                            <input type="radio" id="Ray Tracer" name="favorite_project" value="K" />
-                            <label for="Ray Tracer">Ray Tracer</label><br />
-                        
-                            <input type="radio" id="Fun Fact 2" name="favorite_project" value="S" />
-                            <label for="Fun Fact 2">Codename</label><br />
-                        
-                            <input type="radio" id="Fun fact 3" name="favorite_project" value="M" />
-                            <label for="Fun fact 3">Intent Classification</label>
-                        </fieldset>
+                        <my-fieldset>
+                            <fieldset>
+                                <legend>Choose your favorite project</legend>
+                            
+                                <input type="radio" id="Ray Tracer" name="favorite_project" value="K" />
+                                <label for="Ray Tracer">Ray Tracer</label><br />
+                            
+                                <input type="radio" id="Fun Fact 2" name="favorite_project" value="S" />
+                                <label for="Fun Fact 2">Codename</label><br />
+                            
+                                <input type="radio" id="Fun fact 3" name="favorite_project" value="M" />
+                                <label for="Fun fact 3">Intent Classification</label>
+                            </fieldset>
+                        </my-fieldset>
                         <br>
 
                         <label for="site_improvement">Give some suggestion to improve my site:</label>
@@ -338,17 +366,18 @@ Feel free to browse through my projects, technical skills, and professional jour
                 <button onclick="document.getElementById('contact-dialog').showModal()">
                     Open Contact Information
                 </button>
-                
-                <dialog id="contact-dialog">
-                    <h3>Contact Information</h3>
-                    <p>Name: Ziyue Liu</p>
-                    <address>Lombard Pl 8800, San Diego, California</address>
-                    <p>Email: zil085@ucsd.edu</p>
-                    <p>mobile: 858-666-5794</p>
-                    <form method="dialog">
-                        <button>Close</button>
-                    </form>
-                </dialog>
+                <my-dialog>
+                    <dialog id="contact-dialog">
+                        <h3>Contact Information</h3>
+                        <p>Name: Ziyue Liu</p>
+                        <address>Lombard Pl 8800, San Diego, California</address>
+                        <p>Email: zil085@ucsd.edu</p>
+                        <p>mobile: 858-666-5794</p>
+                        <form method="dialog">
+                            <button>Close</button>
+                        </form>
+                    </dialog>
+                </my-dialog>
             </section>
         </main>
 
@@ -363,12 +392,24 @@ Feel free to browse through my projects, technical skills, and professional jour
                 ctx.arc(95, 50, 40, 0, 2 * Math.PI);
                 ctx.stroke();
 
+                class HelloWorld extends HTMLElement {
+                    constructor() {
+                        super();
+                        // When element is created, log to console
+                        console.log("Hello World!");
+                    }
+                }
+
+                // Register the custom element
+                customElements.define('hello-world', HelloWorld);
+
         </script>
         <noscript>
             <!-- anchor linking to external file -->
             <a href="https://www.mozilla.org/">External Link</a>
         </noscript>
-          
+
+        <hello-world></hello-world>
     </body>
 </html>
 
