@@ -356,58 +356,12 @@ Feel free to browse through my projects, technical skills, and professional jour
             <p>© 2025 Ziyue Liu</p>
         </footer>
         <script>
-                const canvas = document.getElementById('welcomeCanvas');
-        const ctx = canvas.getContext('2d');
-        
-        // Particle class
-        class Particle {
-            constructor() {
-                this.reset();
-            }
-            
-            reset() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.vx = (Math.random() - 0.5) * 2;
-                this.vy = (Math.random() - 0.5) * 2;
-                this.size = Math.random() * 3 + 1;
-                this.color = `hsla(${Math.random() * 360}, 70%, 60%, 0.8)`;
-            }
-            
-            update() {
-                this.x += this.vx;
-                this.y += this.vy;
-                
-                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
-                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
-            }
-            
-            draw() {
+               
+               var c = document.getElementById("welcomeCanvas");
+                var ctx = c.getContext("2d");
                 ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fillStyle = this.color;
-                ctx.fill();
-            }
-        }
-        
-        // Create particles
-        const particles = Array.from({ length: 20 }, () => new Particle());
-        
-        // Animation loop
-        function animate() {
-            ctx.fillStyle = 'rgba(248, 249, 250, 0.1)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            
-            particles.forEach(particle => {
-                particle.update();
-                particle.draw();
-            });
-            
-            requestAnimationFrame(animate);
-        }
-        
-        // Start animation
-        animate();
+                ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+                ctx.stroke();
 
         </script>
         <noscript>
@@ -417,3 +371,84 @@ Feel free to browse through my projects, technical skills, and professional jour
           
     </body>
 </html>
+
+<!-- 
+html
+head
+title
+meta
+link
+script*
+style*
+body
+main
+h1
+h2
+h3
+p
+section
+header
+footer
+aside
+nav
+div
+span
+br
+b
+i
+strong
+em
+code
+pre
+hr
+a
+img
+picture
+iframe
+audio
+video
+canvas*
+svg*
+ul
+ol
+optgroup
+li
+form
+label
+fieldset
+legend
+input
+textarea
+datalist
+select
+option
+details
+summary
+button*
+template*
+table
+tr
+td
+th
+caption
+col
+colgroup
+figure
+figcaption
+blockquote
+cite
+ins
+del
+search
+dialog
+address
+hgroup
+dd
+
+dt
+dl
+abbr
+dfn
+kbd
+source
+noscript -->
