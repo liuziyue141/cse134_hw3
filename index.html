@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+
+    </script>
+    <style>
+
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Ziyue Liu's Personal Site</title>
+    </head>
+    <body>
+        <nav class="menu">
+            <ul>
+              <li><a href="#About Me">About Me</a></li>
+              <li><a href="#Education">Education</a></li>
+              <li><a href="#Technical Skill">Technical Skill</a></li>
+              <li><a href="#Project">Project</a></li>
+               <li><a href="#Score and Award">Score and Award</a></li>
+               <li><a href="#FeedBack">Feedback</a></li> 
+               <li><a href="#Contact Me">Contact Me</a></li> 
+            </ul>
+          </nav>
+          
+          <main>
+            <h1>Welcome to Tim's portfolio site</h1>
+            <section>
+                <h2>
+                    Welcome message
+                </h2>
+
+                <canvas id="welcomeCanvas" width="120" height="120">
+                    An interactive particle animation welcoming visitors to the site.
+                </canvas>
+        
+                <code class="code-block">
+                <pre>
+                    public class Welcome {
+                        public static void main(String[] args) {
+                            System.out.println("Welcome to my personal site!");
+                        }
+                    }
+                </pre>
+                </code>
+                Welcome to my portfolio! I'm passionate about solving complex technical challenges and creating impactful solutions. With a strong foundation in software engineering and a track record of successful projects, I invite you to explore my work and experience. Whether you're looking for a dedicated team member or seeking to discuss potential opportunities, I'm excited to connect with you.
+Feel free to browse through my projects, technical skills, and professional journey. <aside><p>Let's explore how my skills and experience can bring value to your organization.</p></aside>Each piece of work represents my commitment to excellence and continuous growth in the ever-evolving tech landscape.
+            </section>
+            <hr>
+            <section id = "About Me">
+                <h2>About Me</h2>
+                <blockquote>
+                    <cite>People work better when they know what the goal is and why.</cite>-- Elon Musk
+                </blockquote>
+                <div>
+                    <picture>
+                        <source srcset="big-profile-picture.jpg" width="500" height="750" media="(min-width: 600px)" />
+                        <img src="small-profile-picture.jpg" alt="profile picture"/>
+                    </picture>
+                    <p>
+                        Ziyue Liu is a UCSD student studying <b>computer engineering</b>. I have experience in various fields - <em>web development, systems engineering, and machine learning</em>. Previously as a Software Engineer at Qualcomm Institute, Tim works on developed a <strong>python flask</strong> platform for the smart learning, a AI tutor platform used by many classes in UCSD. With a focus on security, Tim have implemented token-based authentication, enhancing user experience through seamless integration with Google OAuth and JWT. Tim's ambition is to further harness innovative software to address complex challenges, all while contributing to a transformative learning environment at UCSD.
+                    </p>
+
+                </div>
+
+                <figure>
+                    <figcaption>Listen to my <del>self introduction</del> <ins>bot introduction</ins></figcaption>
+                    <audio controls src="profile-audio.mp3"></audio>
+                    <a href="profile-audio.mp3"> Download audio </a>
+                  </figure>
+                  
+            </section id = "Education">
+            <hr>
+            <section>
+                <h2>Education</h2>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" fill="red"/>
+                  </svg>
+                <hgroup>
+                    <h3>University of California, San Diego</h3>
+                    <p>2022-2026</p>
+                </hgroup>
+
+                <p>major: Computer Engineering</p>
+                <details>
+                    <summary>Relevant Courses</summary>
+                    <ol>
+                        <li>Data Structure & Algorithm</li>
+                        <li>Database</li>
+                        <li>Computer Network</li>
+                        <li>Operating System</li>
+                        <li>Distributed System</li>
+                        <li>Object Oriented Programming</li>
+                        <li>Software Engineering</li>
+                        <li>Computer Security</li>
+                        <li>Deep Learning</li>
+                        <li>Computer Architecture</li>
+                    </ol>
+                </details>
+            </section>
+            <hr>
+            <section id = "Technical Skill">
+                <h2>Technical Skill</h2>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" fill="green"/>
+                  </svg>
+                <search>
+                    <label for="skill-search">Search for skills:</label>
+                    <input type="search" 
+                            id="skill-search" 
+                            placeholder="Type to search skills..."
+                            list="all-skills"> 
+                    <datalist id="all-skills">
+                        <!-- Programming Languages -->
+                        <option value="Python">
+                        <option value="Java">
+                        <option value="SQL">
+                        <option value="C++">
+                        <option value="Go">
+                        <option value="JavaScript">
+                        <option value="TypeScript">
+                        <option value="HTML">
+                        <option value="CSS">
+                        <option value="Bash">
+            
+                        <!-- Frameworks -->
+                        <option value="Spring">
+                        <option value="Flask">
+                        <option value="REST API">
+                        <option value="JWT">
+                        <option value="OAuth">
+                        <option value="PyTorch">
+                        <option value="React">
+                        <option value="MERN Stack">
+                        <option value="Node.js">
+            
+                        <!-- Database Technologies -->
+                        <option value="SQLAlchemy">
+                        <option value="MongoDB">
+                        <option value="MySQL">
+                        <option value="PostgreSQL">
+                        <option value="Oracle">
+                        <option value="Redis">
+                    </datalist>
+                </search>
+           
+                
+                  <dl>
+                    <dt><h3>Programming Language</h3></dt>
+                    <dd>Python, Java, SQL, C++, Go, JavaScript, TypeScript, HTML, CSS, Bash</dd>
+                  
+                    <dt><h3>Framework</h3></dt>
+                    <dd>Spring, Flask, Rest API, JWT, OAuth, pytorch, React, MERN, Node.JS</dd>
+                  
+                    <dt><h3>Database Technology</h3></dt>
+                    <dd>SQLAlchemy, MongoDB, MySQL, PostgreSQL, Oracle, Redis</dd>
+                  </dl>
+                  
+                <!-- <div>
+                    <h3>Programming Language</h3>
+                    <p></p>
+                </div>
+                <div>
+                    <h3>Framework</h3>
+                </div>
+                <div>
+                    <h3></h3>
+                </div> -->
+                
+            </section>
+
+            <hr>
+            
+            <section id = "Project">
+                <h2>Project</h2>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" fill="yellow"/>
+                  </svg>
+                <template id="project-template">
+                    <div class="project-card">
+                        <h3>Project Title</h3>
+                        <img src="" width="500" height="500" alt="Project Image">
+                        <p class="project-description">Project description goes here.</p>
+                        <a href="">View Project</a>
+                    </div>
+                </template>
+                
+                <div>
+                    <h3>Ray Tracer Project</h3>
+                    <a href="https://github.com/liuziyue141/RayTracerProject"><img src="ray_tracer.png" width="500" height="500"alt="Ray Tracer Project"></a>
+                    <p>Developed a comprehensive raytracer from scratch in C++, implementing core rendering features including shadow computation, reflection handling, and geometric primitive intersection calculations. Optimized performance through acceleration structures, resulting in efficient high-quality image rendering with accurate lighting and materials.</p>
+                </div>
+                <br>
+                <div>
+                    <h3>Codename</h3>
+                    <video width="500" height="400" controls>
+                        <source src="codename.mov" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                      
+                    <a href="https://github.com/liuziyue141/codename"><img src="codename.avif" width="500" height="400" alt="Codename project Project"></a>
+                    <p><dfn>Codenames</dfn> is a strategic word-guessing party game where teams compete to identify their agents through clues provided by their "spymaster." Architected the frontend using React to create an intuitive user interface featuring dynamic word grids, team management, and real-time game state updates. Built a robust Node.js backend with MongoDB for efficient storage of game states, user profiles, and match histories, while implementing RESTful APIs for seamless client-server communication. Integrated Socket.IO to enable real-time gameplay features including live updates of word selections, team score tracking, and instant relay of spymaster clues across all connected players. Successfully deployed the application on Heroku with continuous integration, making the game accessible to users worldwide while maintaining smooth performance and reliable data synchronization.</p>
+                </div>
+                <br>
+                <div>
+                    <h3>Intent Classification Using BERT and Contrastive Learning</h3>
+                    <div>
+                        <a href="/CSE_151B___PA4___Report.pdf"><iframe
+                        id="inlineFrameExample"
+                        title="Inline Frame Example"
+                        width="500"
+                        height="700"
+                        src="/CSE_151B___PA4___Report.pdf">
+                        </iframe>
+
+                        <a href="/CSE_151B___PA4___Report.pdf"><img src="pa4.ppm" width="500" height="500" alt="Contrastive learning"></a>
+                    </div>
+                    <p>Led an extensive natural language processing project analyzing <i>Amazon's massive intent dataset</i> using <abbr>BERT</abbr> (Bidirectional Encoder Representations from Transformers) and advanced contrastive learning approaches <span>(SupCon and SimCLR)</span>. Through systematic experimentation with hyperparameters including dropout rates, batch sizes, and learning rate schedules, I achieved significant performance improvements. The optimized BERT model, enhanced with Layer-Wise Learning Rate Decay (LLRD) and Warm Steps, achieved an impressive 88% accuracy on intent classification. While exploring contrastive learning techniques for better text embedding in high-dimensional feature spaces, I discovered that traditional fine-tuning approaches outperformed these newer methods for this specific use case.</p>
+
+                </div>
+
+                
+            </section>
+
+            <hr>
+            <section id = "Score and Award">
+                <h2>
+                    Score and Award
+                </h2>
+                <table>
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">score</th>
+                      </tr>
+                    </thead>
+                    <colgroup>
+                        <col />
+                        <col span="1" class="competition" />
+                        <col span="1" class="score" />
+                      </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row">International Mathematic Modelling Competition</th>
+                        <td>Finalist (top 50 out of 5000 teams)</td>                      
+                    </tr>
+                      <tr>
+                        <th scope="row">TechX Hackathon</th>
+                        <td>3rd place out of 100 teams</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">UK Chemistry Olympiad</th>
+                        <td>Gold</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">AP Computer Science</th>
+                        <td>5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </section>
+
+            <section id = "Feedback">
+                <h2>Feedback</h2>
+                <form action="/submit_form" method="GET">
+                    <label for="interest-select">which section you found most interesting:</label>
+                    <select name="interest-select"  id="interest-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="Education">Education</option>
+                        <option value="Project">Project</option>
+                        <option value="Score and Award">Score and Award</option>
+                    </select>
+                    <br>
+                    <label for="skill-selects[]">which skills are relevant to your company?</label>
+                        <select name="skill-selects[]" id="skill-selects[]" multiple required>
+                        <optgroup label="Database">
+                            <option>MangoDB</option>
+                            <option>Posgres</option>
+                        </optgroup>
+                        <optgroup label="Framework">
+                            <option>Spring</option>
+                            <option>Flask</option>
+                        </optgroup>
+                        <optgroup label="Programming Language">
+                            <option>Java</option>
+                            <option>Python</option>
+                        </optgroup>
+                        </select>
+                        <br>
+                        <label for="skill-input">Which skill is most relevant to your company?</label>
+                            <input type="text" id="skill-input" name="skills" list="skill-options">
+                            <datalist id="skill-options">
+                                <option value="MongoDB">
+                                <option value="PostgreSQL">
+                                <option value="Spring">
+                                <option value="Flask">
+                                <option value="Java">
+                                <option value="Python">
+                            </datalist>
+                        <br>
+                        <fieldset>
+                            <legend>Choose your favorite project</legend>
+                        
+                            <input type="radio" id="Ray Tracer" name="favorite_project" value="K" />
+                            <label for="Ray Tracer">Ray Tracer</label><br />
+                        
+                            <input type="radio" id="Fun Fact 2" name="favorite_project" value="S" />
+                            <label for="Fun Fact 2">Codename</label><br />
+                        
+                            <input type="radio" id="Fun fact 3" name="favorite_project" value="M" />
+                            <label for="Fun fact 3">Intent Classification</label>
+                        </fieldset>
+                        <br>
+
+                        <label for="site_improvement">Give some suggestion to improve my site:</label>
+
+                        <textarea id="site_improvement" name="site_improvement" rows="5" cols="33"></textarea> 
+                        <button type="submit">Submit Feedback</button>
+                        <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to reset the feedback form.</p>
+                </form>
+                
+            </section>
+
+            <!-- <section id = "Contact Me">
+                <h2>Contact Me!</h2>
+                <details>
+                    <summary><b>Contact Me</b></summary>
+                    <p>Name: Ziyue Liu</p>
+                    <p>Address: <address>Lombard Pl 8800, San Diego, California</address></p>
+                    <p>Email: zil085@ucsd.edu</p>
+                    <p>mobile: 858-666-5794</p>
+                  
+                </details>
+            </section> -->
+            <section id="Contact Me">
+                <h2>Contact Me!</h2>
+                <button onclick="document.getElementById('contact-dialog').showModal()">
+                    Open Contact Information
+                </button>
+                
+                <dialog id="contact-dialog">
+                    <h3>Contact Information</h3>
+                    <p>Name: Ziyue Liu</p>
+                    <address>Lombard Pl 8800, San Diego, California</address>
+                    <p>Email: zil085@ucsd.edu</p>
+                    <p>mobile: 858-666-5794</p>
+                    <form method="dialog">
+                        <button>Close</button>
+                    </form>
+                </dialog>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Ziyue Liu</p>
+        </footer>
+        <script>
+                const canvas = document.getElementById('welcomeCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Particle class
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 2;
+                this.vy = (Math.random() - 0.5) * 2;
+                this.size = Math.random() * 3 + 1;
+                this.color = `hsla(${Math.random() * 360}, 70%, 60%, 0.8)`;
+            }
+            
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+            }
+            
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+        }
+        
+        // Create particles
+        const particles = Array.from({ length: 20 }, () => new Particle());
+        
+        // Animation loop
+        function animate() {
+            ctx.fillStyle = 'rgba(248, 249, 250, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            
+            requestAnimationFrame(animate);
+        }
+        
+        // Start animation
+        animate();
+
+        </script>
+        <noscript>
+            <!-- anchor linking to external file -->
+            <a href="https://www.mozilla.org/">External Link</a>
+        </noscript>
+          
+    </body>
+</html>
