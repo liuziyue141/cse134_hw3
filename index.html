@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script>
-
-    </script>
-    <style>
-
-    </style>
     <head>
         <meta charset="UTF-8">
         <meta property="og:title" content="My Awesome Blog Post Title">
         <meta property="og:description" content="A captivating summary of the blog post content.">
         <meta property="og:image" content="/X.avif">
         <meta property="og:url" content="https://yourwebsite.com/blog-post">
-
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@YourTwitterHandle">
         <meta name="twitter:creator" content="@ZiyueLiu">
@@ -21,88 +14,86 @@
         <meta name="twitter:image" content="https://yourwebsite.com/profile-image.jpg">
         <meta name="twitter:image:alt" content="Ziyue Liu's Portfolio Screenshot">
         <link rel="stylesheet" href="styles.css">
+        <style> 
+            main > section {
+                background: #222;
+                padding: 20px;
+                border-radius: 20px;
+                margin-top: 30px;
+            }
+        </style>
         <title>Ziyue Liu's Personal Site</title>
     </head>
     <body>
-        <nav class="menu">
-            <ul>
-              <li><a href="#About Me">About Me</a></li>
-              <li><a href="#Education">Education</a></li>
-              <li><a href="#Technical Skill">Technical Skill</a></li>
-              <li><a href="#Project">Project</a></li>
-               <li><a href="#Score and Award">Score and Award</a></li>
-               <li><a href="#FeedBack">Feedback</a></li> 
-               <li><a href="#Contact Me">Contact Me</a></li> 
+        <nav class="main-nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#About-Me" class="nav-link">About Me</a></li>
+              <li class="nav-item"><a href="#Education" class="nav-link">Education</a></li>
+              <li class="nav-item"><a href="#Technical-Skill" class="nav-link">Technical Skill</a></li>
+              <li class="nav-item"><a href="#Project" class="nav-link">Project</a></li>
+              <li class="nav-item"><a href="#Score-and-Award" class="nav-link">Score and Award</a></li>
+              <li class="nav-item"><a href="#Feedback" class="nav-link">Feedback</a></li> 
+              <li class="nav-item"><a href="#Contact-Me" class="nav-link">Contact Me</a></li> 
             </ul>
-          </nav>
-          
-          <main>
-            <h1>Welcome to Tim's portfolio site</h1>
-            <section>
-                <h2>
-                    Welcome message
-                </h2>
-
-                <blockquote>
-                    <p><math>
-                        <mi>E</mi>
-                        <mo>=</mo>
-                        <mi>m</mi>
-                        <mi>c</mi>
-                        <msup>
-                            <mn>2</mn>
-                        </msup>
-                    </math></p>
-                    <cite>-- Albert Einstein</cite>                </blockquote>
-                <blockquote>
-                    <cite>People work better when they know what the goal is and why.</cite>-- Elon Musk
-                </blockquote>
-                <canvas id="welcomeCanvas" width="120" height="120">
-                    An interactive particle animation welcoming visitors to the site.
-                </canvas>
+        </nav>
         
-                <code class="code-block">
-                <pre>
-                    public class Welcome {
-                        public static void main(String[] args) {
-                            System.out.println("Welcome to my personal site!");
-                        }
-                    }
-                </pre>
-                </code>
-                Welcome to my portfolio! I'm passionate about solving complex technical challenges and creating impactful solutions. With a strong foundation in software engineering and a track record of successful projects, I invite you to explore my work and experience. Whether you're looking for a dedicated team member or seeking to discuss potential opportunities, I'm excited to connect with you.
-Feel free to browse through my projects, technical skills, and professional journey. <aside><p>Let's explore how my skills and experience can bring value to your organization.</p></aside>Each piece of work represents my commitment to excellence and continuous growth in the ever-evolving tech landscape.
+        <main class="content-wrapper">
+            <h1 id="welcome-message" class="page-title">Welcome to Tim's portfolio site</h1>
+            
+            <section class="quote-section">
+                <h2 class="section-heading">Favorite Quotes</h2>
+                <div class="quote-grid">
+                    <blockquote class="quote-card math-quote">
+                        <cite class="quote-content">
+                            <math>
+                                <mi>E</mi>
+                                <mo>=</mo>
+                                <mi>m</mi>
+                                <mi>c</mi>
+                                <msup>
+                                    <mn>2</mn>
+                                </msup>
+                            </math>
+                        </cite>
+                    </blockquote>
+                    <blockquote class="quote-card text-quote">
+                        <p class="quote-content">People work better when they know what the goal is and why.</p>
+                    </blockquote>
+                </div>
+                <div class="portfolio-intro">
+                    <p>Welcome to my portfolio! I'm passionate about solving complex technical challenges and creating impactful solutions. With a strong foundation in software engineering and a track record of successful projects, I invite you to explore my work and experience. Whether you're looking for a dedicated team member or seeking to discuss potential opportunities, I'm excited to connect with you.</p>
+                    <aside class="callout">
+                        <p>Let's explore how my skills and experience can bring value to your organization.</p>
+                    </aside>
+                    <p>Each piece of work represents my commitment to excellence and continuous growth in the ever-evolving tech landscape.</p>
+                </div>
             </section>
-            <hr>
-            <section id = "About Me">
-                <h2>About Me</h2>
-                <blockquote>
-                    <cite>People work better when they know what the goal is and why.</cite>-- Elon Musk
-                </blockquote>
-                <div>
-                    <picture>
-                        <source srcset="big-profile-picture.jpg" width="500" height="750" media="(min-width: 600px)" />
-                        <img src="small-profile-picture.jpg" alt="profile picture"/>
-                    </picture>
-                    <p>
-                        Ziyue Liu is a UCSD student studying <b>computer engineering</b>. I have experience in various fields - <em>web development, systems engineering, and machine learning</em>. Previously as a Software Engineer at Qualcomm Institute, Tim works on developed a <strong>python flask</strong> platform for the smart learning, a AI tutor platform used by many classes in UCSD. With a focus on security, Tim have implemented token-based authentication, enhancing user experience through seamless integration with Google OAuth and JWT. Tim's ambition is to further harness innovative software to address complex challenges, all while contributing to a transformative learning environment at UCSD.
-                    </p>
 
+            <hr class="section-divider">
+
+            <section id="About-Me" class="content-section profile-section">
+                <h2 class="section-heading">About Me</h2>
+                <div class="profile-content">
+                    <picture class="profile-picture">
+                        <source srcset="big-profile-picture.jpg" media="(min-width: 600px)">
+                        <img src="small-profile-picture.jpg" alt="Ziyue Liu profile picture">
+                    </picture>
+                    <div class="profile-text">
+                        <p>Ziyue Liu is a UCSD student studying <strong class="highlight">computer engineering</strong>. I have experience in various fields - <em class="emphasis">web development, systems engineering, and machine learning</em>. Previously as a Software Engineer at Qualcomm Institute, Tim works on developed a <strong class="highlight">Python Flask</strong> platform for the smart learning, a AI tutor platform used by many classes in UCSD. With a focus on security, Tim have implemented token-based authentication, enhancing user experience through seamless integration with Google OAuth and JWT. Tim's ambition is to further harness innovative software to address complex challenges, all while contributing to a transformative learning environment at UCSD.</p>
+                    </div>
                 </div>
 
-                <figure>
-                    <figcaption>Listen to my <del>self introduction</del> <ins>bot introduction</ins></figcaption>
-                    <audio controls src="profile-audio.mp3"></audio>
-                    <a href="profile-audio.mp3"> Download audio </a>
-                  </figure>
-                  
-            </section id = "Education">
+                <figure class="audio-player">
+                    <figcaption class="audio-caption">Listen to my <del class="deleted">self introduction</del> <ins class="inserted">bot introduction</ins></figcaption>
+                    <audio controls src="profile-audio.mp3" class="audio-element"></audio>
+                    <a href="profile-audio.mp3" class="download-link"> Download audio </a>
+                </figure>
+            </section>
+
             <hr>
-            <section>
+            <section id = "Education">
                 <h2>Education</h2>
-                <svg width="100" height="100">
-                    <circle cx="50" cy="50" r="40" fill="red"/>
-                  </svg>
+                <img class = "headerImg" id = "ucsd-id" src="ucsd.svg" alt= "ucsd icon" width = 100px height = 100px>
                 <hgroup>
                     <h3>University of California, San Diego</h3>
                     <p>2022-2026</p>
@@ -126,11 +117,9 @@ Feel free to browse through my projects, technical skills, and professional jour
                 </details>
             </section>
             <hr>
-            <section id = "Technical Skill">
+            <section id = "Technical-Skill">
                 <h2>Technical Skill</h2>
-                <svg width="100" height="100">
-                    <circle cx="50" cy="50" r="40" fill="green"/>
-                  </svg>
+                <img class = "headerImg" src = "/toolkit.png" alt= "tool kit image" width = 300px height = 100px></img>
                 <search>
                     <label for="skill-search">Search for skills:</label>
                     <input type="search" 
@@ -197,60 +186,50 @@ Feel free to browse through my projects, technical skills, and professional jour
             </section>
 
             <hr>
-            
-            <section id = "Project">
-                <h2>Project</h2>
-                <svg width="100" height="100">
-                    <circle cx="50" cy="50" r="40" fill="yellow"/>
-                  </svg>
-                <template id="project-template">
-                    <div class="project-card">
-                        <h3>Project Title</h3>
-                        <img src="" width="500" height="500" alt="Project Image">
-                        <p class="project-description">Project description goes here.</p>
-                        <a href="">View Project</a>
-                    </div>
-                </template>
-                
-                <div>
-                    <h3>Ray Tracer Project</h3>
-                    <a href="https://github.com/liuziyue141/RayTracerProject"><img src="ray_tracer.png" width="500" height="500"alt="Ray Tracer Project"></a>
-                    <p>Developed a comprehensive raytracer from scratch in C++, implementing core rendering features including shadow computation, reflection handling, and geometric primitive intersection calculations. Optimized performance through acceleration structures, resulting in efficient high-quality image rendering with accurate lighting and materials.</p>
-                </div>
-                <br>
-                <div>
-                    <h3>Codename</h3>
-                    <video width="500" height="400" controls>
-                        <source src="codename.mov" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video>
-                      
-                    <a href="https://github.com/liuziyue141/codename"><img src="codename.avif" width="500" height="400" alt="Codename project Project"></a>
-                    <p><dfn>Codenames</dfn> is a strategic word-guessing party game where teams compete to identify their agents through clues provided by their "spymaster." Architected the frontend using React to create an intuitive user interface featuring dynamic word grids, team management, and real-time game state updates. Built a robust Node.js backend with MongoDB for efficient storage of game states, user profiles, and match histories, while implementing RESTful APIs for seamless client-server communication. Integrated Socket.IO to enable real-time gameplay features including live updates of word selections, team score tracking, and instant relay of spymaster clues across all connected players. Successfully deployed the application on Heroku with continuous integration, making the game accessible to users worldwide while maintaining smooth performance and reliable data synchronization.</p>
-                </div>
-                <br>
-                <div>
-                    <h3>Intent Classification Using BERT and Contrastive Learning</h3>
-                    <div>
-                        <a href="/CSE_151B___PA4___Report.pdf"><iframe
-                        id="inlineFrameExample"
-                        title="Inline Frame Example"
-                        width="500"
-                        height="700"
-                        src="/CSE_151B___PA4___Report.pdf">
-                        </iframe>
 
-                        <a href="/CSE_151B___PA4___Report.pdf"><img src="pa4.ppm" width="500" height="500" alt="Contrastive learning"></a>
+            <section id="Project">
+                <h2>Project</h2>
+                <div class="project-grid">
+                  <div class="project-container">
+                    <img src="ray_tracer.png" 
+                            class="project-img"
+                            alt="3D rendered scene showing light reflection and shadow effects">              
+                    <div class="project-content">
+                      <h3>Ray Tracer Project</h3>
+                      <p>Developed a comprehensive raytracer from scratch in C++, implementing core rendering features including shadow computation, reflection handling, and geometric primitive intersection calculations. Optimized performance through acceleration structures, resulting in efficient high-quality image rendering with accurate lighting and materials.</p>
+                      <a href="https://github.com/liuziyue141/RayTracerProject">View Project</a>
                     </div>
+                  </div>
+              
+                  <!-- Codename Project -->
+                  <div class="project-container">
+                    <img src="codename.avif" 
+                        class="project-img"
+                        alt="Screenshot of Codename game interface showing word grid"
+                        loading="lazy">
+                    <video width="500" height="400" controls>
+                        <source src="codename.mov" type="video/mp4" class="project-img">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="project-content">
+                      <h3>Codename</h3>
+                      <p><dfn>Codenames</dfn> is a strategic word-guessing party game is a strategic word-guessing party game where teams compete to identify their agents through clues provided by their "spymaster." Architected the frontend using React to create an intuitive user interface featuring dynamic word grids, team management, and real-time game state updates. Built a robust Node.js backend with MongoDB for efficient storage of game states, user profiles, and match histories, while implementing RESTful APIs for seamless client-server communication. Integrated Socket.IO to enable real-time gameplay features including live updates of word selections, team score tracking, and instant relay of spymaster clues across all connected players. Successfully deployed the application on Heroku with continuous integration, making the game accessible to users worldwide while maintaining smooth performance and reliable data synchronization.</p>
+                      <a href="https://github.com/liuziyue141/codename">View Project</a>
+                    </div>
+                  </div>
+              
+                </div>
+                <div class = "project-container">
+                    <h3>Intent Classification Using BERT and Contrastive Learning</h3>
+                    <my-project-photo>
+                        <a href="/CSE_151B___PA4___Report.pdf"><img src="pa4.ppm" width="500" height="500" class = "project-img" alt="Contrastive learning"></a>
+                    </my-project-photo>
                     <p>Led an extensive natural language processing project analyzing <i>Amazon's massive intent dataset</i> using <abbr>BERT</abbr> (Bidirectional Encoder Representations from Transformers) and advanced contrastive learning approaches <span>(SupCon and SimCLR)</span>. Through systematic experimentation with hyperparameters including dropout rates, batch sizes, and learning rate schedules, I achieved significant performance improvements. The optimized BERT model, enhanced with Layer-Wise Learning Rate Decay (LLRD) and Warm Steps, achieved an impressive 88% accuracy on intent classification. While exploring contrastive learning techniques for better text embedding in high-dimensional feature spaces, I discovered that traditional fine-tuning approaches outperformed these newer methods for this specific use case.</p>
 
                 </div>
-
-                
-            </section>
-
+              </section>
             <hr>
-            <section id = "Score and Award">
+            <section id = "Score-and-Award">
                 <h2>
                     Score and Award
                 </h2>
@@ -361,7 +340,7 @@ Feel free to browse through my projects, technical skills, and professional jour
                   
                 </details>
             </section> -->
-            <section id="Contact Me">
+            <section id="Contact-Me">
                 <h2>Contact Me!</h2>
                 <button onclick="document.getElementById('contact-dialog').showModal()">
                     Open Contact Information
@@ -389,7 +368,7 @@ Feel free to browse through my projects, technical skills, and professional jour
                var c = document.getElementById("welcomeCanvas");
                 var ctx = c.getContext("2d");
                 ctx.beginPath();
-                ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+                ctx.arc(70, 50, 40, 0, 2 * Math.PI);
                 ctx.stroke();
 
                 class HelloWorld extends HTMLElement {
@@ -408,88 +387,5 @@ Feel free to browse through my projects, technical skills, and professional jour
             <!-- anchor linking to external file -->
             <a href="https://www.mozilla.org/">External Link</a>
         </noscript>
-
-        <hello-world></hello-world>
     </body>
 </html>
-
-<!-- 
-html
-head
-title
-meta
-link
-script*
-style*
-body
-main
-h1
-h2
-h3
-p
-section
-header
-footer
-aside
-nav
-div
-span
-br
-b
-i
-strong
-em
-code
-pre
-hr
-a
-img
-picture
-iframe
-audio
-video
-canvas*
-svg*
-ul
-ol
-optgroup
-li
-form
-label
-fieldset
-legend
-input
-textarea
-datalist
-select
-option
-details
-summary
-button*
-template*
-table
-tr
-td
-th
-caption
-col
-colgroup
-figure
-figcaption
-blockquote
-cite
-ins
-del
-search
-dialog
-address
-hgroup
-dd
-
-dt
-dl
-abbr
-dfn
-kbd
-source
-noscript -->
